@@ -1,0 +1,142 @@
+
+
+.about-section{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.9)), url('https://img.freepik.com/premium-vector/man-with-glasses-touching-his-chin-get-idea-innovation-mind-map-concept-illustration_270158-289.jpg?w=740');
+}
+
+.progress{
+    position: sticky;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 50px;
+    color: #ffa500;
+    z-index: 1;
+}
+
+.progress-bar{
+    height: 3px;
+    background-color: #fff;
+}
+
+.about-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1366px;
+    width: 100%;
+    padding: 70px;
+}
+
+.about-image img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.about-content{
+    flex: 1;
+    color: #ccd6f6;
+}
+
+.about-desc{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+}
+
+.about-row{
+    display: flex;
+    gap: 40px;
+}
+
+.col{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'gilroy', sans-serif;
+}
+
+.col p{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #64ffda;
+}
+
+.col span{
+    position: absolute;
+    right: -30%;
+    color: #ccd6f6;
+}
+
+
+   /* for mobile */
+
+   @media only screen and (max-width:738px){
+       .about-wrapper{
+          padding: 20px;
+          height: auto;
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+       }
+
+       .about-image img{
+          width: 150px;
+          height: 150px;
+       }
+
+       .about-content{
+         flex: unset;
+         width: 100%;
+       }
+
+       .about-desc{
+          font-size: 0.4rem;
+          line-height: 1;
+       }
+
+       .about-row{
+          flex: 1;
+          flex-wrap: wrap;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+       }
+
+       .col{
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          flex-direction: center;
+          justify-items: center;
+          gap: 20px;
+       }
+
+       .col p{
+         font-size: 0.6rem;
+       }
+
+       .col span{
+          right: -10%;
+          gap: 30px;
+       }
+}
+   
+            
+   
+
+
+
+    
